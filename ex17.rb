@@ -4,6 +4,7 @@ from_file, to_file = ARGV
 puts "Copying from #{from_file} to #{to_file}"
 # Tell user your copying from 1st declared var to 2nd
 
+
 # we could do these two on one line, how?
 in_file = open(from_file)
 # Open file and declare it as variables
