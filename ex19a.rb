@@ -75,6 +75,36 @@ meal(fruit, grain, protein)
 
 puts "<<END VARIATION 6\n\n"
 
+#7 ----------------Take input from user convert to integer
+
+puts ">>START VARIATION 7\n\n"
+prompt = '> '
+
+puts "Greetings. Please tell us what you had for breakfast today.\n\n"
+
+puts "I had ____ pieces of fruit:\n\n", prompt
+
+fruit = $stdin.gets.chomp
+
+
+puts "Toast, bread, or cereal? How many pieces or bowls?\n\n", prompt
+
+grain = $stdin.gets.chomp
+
+
+puts "...And how about protein...eggs, ham, etc. How many eggs or slices of whatever?\n\n", prompt
+
+protein = $stdin.gets.chomp
+
+
+meal(fruit.to_i, grain.to_i, protein.to_i)
+items = fruit.to_i + grain.to_i + protein.to_i
+
+puts "\nSo you had #{items}items for breakfast?\n"
+
+puts "<<END VARIATION 7\n\n"
+
+
 
 
 
